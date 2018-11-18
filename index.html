@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="assets/css/materialize.min.css"/>
+    <link rel="stylesheet" href="assets/css/estils.css"/>
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+          <div class="col m6 row">
+            <h3>Edificios</h3>
+            <div class="col m6">
+                <label><img src="assets/img/main.png" alt=""> Edificio Principal</label>
+                <select id="principal" class="browser-default">
+                  <option value="0" disabled selected>Nivel de edificio</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                  <option value="26">26</option>
+                  <option value="27">27</option>
+                  <option value="28">28</option>
+                  <option value="29">29</option>
+                  <option value="30">30</option>
+                </select>
+                <label><img src="assets/img/barracks.png" alt=""> Cuartel</label>
+                <select id="cuartel" class="browser-default">
+                  <option value="0" disabled selected>Nivel de edificio</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                </select>
+                <label><img src="assets/img/stable.png" alt=""> Cuadra</label>
+                <select id="cuadra" class="browser-default">
+                  <option value="0" disabled selected>Nivel de edificio</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                </select>
+                <label><img src="assets/img/garage.png" alt=""> Taller</label>
+                <select id="taller" class="browser-default">
+                  <option value="0" disabled selected>Nivel de edificio</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                </select>
+                <label><img src="assets/img/snob.png" alt=""> Corte</label>
+                <select id="corte" class="browser-default">
+                  <option value="0" disabled selected>Nivel de edificio</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+                <label><img src="assets/img/smith.png" alt=""> Herreria</label>
+                <select id="herreria" class="browser-default">
+                  <option value="0" disabled selected>Nivel de edificio</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                </select>
+                <label><img src="assets/img/statue.png" alt=""> Estatua</label>
+                <select id="estatua" class="browser-default">
+                  <option value="0" disabled selected>Nivel de edificio</option>
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                </select>
+                <label><img src="assets/img/market.png" alt=""> Mercado</label>
+                <select id="mercado" class="browser-default">
+                  <option value="0" disabled selected>Nivel de edificio</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                  <option value="14">14</option>
+                  <option value="15">15</option>
+                  <option value="16">16</option>
+                  <option value="17">17</option>
+                  <option value="18">18</option>
+                  <option value="19">19</option>
+                  <option value="20">20</option>
+                  <option value="21">21</option>
+                  <option value="22">22</option>
+                  <option value="23">23</option>
+                  <option value="24">24</option>
+                  <option value="25">25</option>
+                </select>
+            </div>
+            <div class="col m6">
+              <label><img src="assets/img/wood.png" alt=""> Leñador</label>
+              <select id="lenador" class="browser-default">
+                <option value="0" disabled selected>Nivel de edificio</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+              </select>
+              <label><img src="assets/img/stone.png" alt=""> Barrera</label>
+              <select id="barrera" class="browser-default">
+                <option value="0" disabled selected>Nivel de edificio</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+              </select>
+              <label><img src="assets/img/iron.png" alt=""> Mina de hierro</label>
+              <select id="hierro" class="browser-default">
+                <option value="0" disabled selected>Nivel de edificio</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+              </select>
+              <label><img src="assets/img/farm.png" alt=""> Granja</label>
+              <select id="granja" class="browser-default">
+                <option value="0" disabled selected>Nivel de edificio</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+              </select>
+              <label><img src="assets/img/storage.png" alt=""> Almacen</label>
+              <select id="almacen" class="browser-default">
+                <option value="0" disabled selected>Nivel de edificio</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+                <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+                <option value="28">28</option>
+                <option value="29">29</option>
+                <option value="30">30</option>
+              </select>
+              <label><img src="assets/img/hide.png" alt=""> Escondrijo</label>
+              <select id="escondrijo" class="browser-default">
+                <option value="0" disabled selected>Nivel de edificio</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+              <label><img src="assets/img/wall.png" alt=""> Muralla</label>
+              <select id="muralla" class="browser-default">
+                <option value="0" disabled selected>Nivel de edificio</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+              </select>
+              <label><img src="assets/img/watchtower.png" alt=""> Torre de vigilancia</label>
+              <select id="torre" class="browser-default">
+                <option value="0" disabled selected>Nivel de edificio</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+              </select>
+            </div>
+            <div id="print" class="col m12">
+            </div>
+          </div>
+          <div class="col m6 row">
+              <h3>Tropas</h3>
+              <div class="row">
+                <div class="col m4">
+                  <h5>Off</h5>
+                </div>
+                <div class="col m4">
+                  <h5>Deff</h5>
+                </div>
+                <div class="col m2">
+                  <h5>Bonus</h5>
+                </div>
+              </div>
+              <div class="col m4">
+                <div class="input-field col m12">
+                  <input autocomplete="off" id="axe" type="number" class="validate">
+                  <label for="axe"><img src="assets/img/unit_axe.png" alt=""> Hachas</label>
+                  <span class="helper-text" data-error="Error" data-success="Correcto">Solo numeros</span>
+                </div>
+                <div class="input-field col m12">
+                  <input autocomplete="off" id="light" type="number" class="validate">
+                  <label for="light"><img src="assets/img/unit_light.png" alt=""> Lijeras</label>
+                  <span class="helper-text" data-error="Error" data-success="Correcto">Solo numeros</span>
+                </div>
+                <div class="input-field col m12">
+                  <input autocomplete="off" id="marcher" type="number" class="validate">
+                  <label for="marcher"><img src="assets/img/unit_marcher.png" alt=""> Arqueros a Caballos</label>
+                  <span class="helper-text" data-error="Error" data-success="Correcto">Solo numeros</span>
+                </div>
+                <div class="input-field col m12">
+                  <input autocomplete="off" id="ram" type="number" class="validate">
+                  <label for="ram"><img src="assets/img/unit_ram.png" alt=""> Arietes</label>
+                  <span class="helper-text" data-error="Error" data-success="Correcto">Solo numeros</span>
+                </div>
+                <div class="input-field col m12">
+                  <input autocomplete="off" id="catapult" type="number" class="validate">
+                  <label for="catapult"><img src="assets/img/unit_catapult.png" alt=""> Catapultas</label>
+                  <span class="helper-text" data-error="Error" data-success="Correcto">Solo numeros</span>
+                </div>
+                <div class="input-field col m12">
+                  <input autocomplete="off" id="snob" type="number" class="validate">
+                  <label for="snob"><img src="assets/img/unit_snob.png" alt=""> Nobles</label>
+                  <span class="helper-text" data-error="Error" data-success="Correcto">Solo numeros</span>
+                </div>
+              </div>
+              <div class="col m4">
+                <div class="input-field col m12">
+                  <input autocomplete="off" id="spear" type="number" class="validate">
+                  <label for="spear"><img src="assets/img/unit_spear.png" alt=""> Lanzas</label>
+                  <span class="helper-text" data-error="Error" data-success="Correcto">Solo numeros</span>
+                </div>
+                <div class="input-field col m12">
+                  <input autocomplete="off" id="sword" type="number" class="validate">
+                  <label for="sword"><img src="assets/img/unit_sword.png" alt=""> Espadas</label>
+                  <span class="helper-text" data-error="Error" data-success="Correcto">Solo numeros</span>
+                </div>
+                <div class="input-field col m12">
+                  <input autocomplete="off" id="archer" type="number" class="validate">
+                  <label for="archer"><img src="assets/img/unit_archer.png" alt=""> Arqueros</label>
+                  <span class="helper-text" data-error="Error" data-success="Correcto">Solo numeros</span>
+                </div>
+                <div class="input-field col m12">
+                  <input autocomplete="off" id="spy" type="number" class="validate">
+                  <label for="spy"><img src="assets/img/unit_spy.png" alt=""> Espias</label>
+                  <span class="helper-text" data-error="Error" data-success="Correcto">Solo numeros</span>
+                </div>
+                <div class="input-field col m12">
+                  <input autocomplete="off" id="heavy" type="number" class="validate">
+                  <label for="heavy"><img src="assets/img/unit_heavy.png" alt=""> Pesadas</label>
+                  <span class="helper-text" data-error="Error" data-success="Correcto">Solo numeros</span>
+                </div>
+                <div class="input-field col m12">
+                  <label>
+                    <input id="knight" type="checkbox" />
+                    <span><img src="assets/img/unit_knight.png" alt=""> Paladin</span>
+                  </label>
+                </div>
+              </div>
+              <div class="col m4">
+                <br>
+                <label>
+                  <input id="cultivo" type="checkbox" />
+                  <span><img src="assets/img/cultivo.png" alt=""> Cultivo</span>
+                </label>
+                <br>
+                <br>
+                <label>
+                  <input id="bgranja" type="checkbox" />
+                  <span><img src="assets/img/farm.png" alt=""> Boni. Granja</span>
+                </label>
+                <br>
+                <br>
+                <label><img src="assets/img/badge.png" alt=""> Bandera de poblacion</label>
+                <select id="bandera" class="browser-default">
+                  <option value="" disabled selected>Nivel de bandera</option>
+                  <option value="0">Sin bandera</option>
+                  <option value="2">2%</option>
+                  <option value="3">3%</option>
+                  <option value="4">4%</option>
+                  <option value="5">5%</option>
+                  <option value="6">6%</option>
+                  <option value="7">7%</option>
+                  <option value="8">8%</option>
+                  <option value="9">9%</option>
+                  <option value="10">10%</option>
+                  <option value="12">12%</option>
+                  <option value="14">14%</option>
+                  <option value="16">16%</option>
+                  <option value="18">18%</option>
+                  <option value="20">20%</option>
+                </select>
+                <br>
+                <button id="calcular" class="btn waves-effect waves-light">Calcular Granja
+                  <i class="material-icons right">send</i>
+                </button>
+              </div>
+          </div>
+        </div><!--div row -->
+        <div class="row">
+          <div style="background-color:blue">
+
+          </div>
+        </div>
+    </div><!--div container -->
+  </body>
+</html>
