@@ -25,7 +25,6 @@ $(document).ready(function(){
       aux = "array_"+name;
       calcularGranja(eval(aux),valor);
     }
-
     function calcularGranja(array,nivel){
       for (var i = 0; i < nivel; i++) {
         granja_edificios += array[i];
@@ -60,13 +59,23 @@ $(document).ready(function(){
         poblacion +=10;
       }
     }
+    function default1(name,nivel){
+      $("#"+name+" option").each(function(){
+        if($(this).text() == nivel){
+          $(this).attr("selected","selected");
+        }
+      });
+    }
+
     $("#calcular").on("click",function(){
+      granja_total=0;
+      granja_edificios =0;
       $("input").each(function(){
         if($(this).val() == ""){
           $(this).val(0);
         }
       });
-      granja_edificios =0;
+
       getSelection("principal");
       getSelection("cuartel");
       getSelection("cuadra");
@@ -111,5 +120,28 @@ $(document).ready(function(){
       $("#print").append("<b>Granja Troopas:</b> "+poblacion+"<br>");
       $("#print").append("<span style='color:"+color+";font-weight:bold'>Granja Libre: "+granja_libre+"</span>");
 
+    });
+    $("#plantilla1").on("click",function(){
+      default1("principal",20);
+      default1("cuartel",25);
+      default1("cuadra",20);
+      default1("taller",15);
+      default1("corte",1);
+      default1("herreria",20);
+      default1("estatua",1);
+      default1("mercado",20);
+      default1("lenador",30);
+      default1("barrera",30);
+      default1("hierro",30);
+      default1("granja",30);
+      default1("escondrijo",10);
+      default1("muralla",20);
+      default1("torre",0);
+    });
+    $("#plantilla2").on("click",function(){
+      $("select").each(function(){
+        console.log($(this));
+        $(this).children().last().attr("selected","selected");
+      });
     });
   });
