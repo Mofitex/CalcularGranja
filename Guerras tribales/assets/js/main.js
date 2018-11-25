@@ -68,12 +68,14 @@ $(document).ready(function(){
     }
 
     $("#calcular").on("click",function(){
+      granja_total=0;
+      granja_edificios =0;
       $("input").each(function(){
         if($(this).val() == ""){
           $(this).val(0);
         }
       });
-      granja_edificios =0;
+
       getSelection("principal");
       getSelection("cuartel");
       getSelection("cuadra");
@@ -137,9 +139,7 @@ $(document).ready(function(){
       default1("torre",0);
     });
     $("#plantilla2").on("click",function(){
-      console.log("hola");
       $("select").each(function(){
-        console.log("hola");
         console.log($(this));
         $(this).children().last().attr("selected","selected");
       });
